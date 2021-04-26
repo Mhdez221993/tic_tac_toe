@@ -9,13 +9,14 @@ end
 
 def show_board
   system "clear" or system "cls"
-  
+  $block = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
   puts "x---x---x---x"
-  puts "| 1 | 2 | 3 |"
+  puts "| #{block[0][0]} | #{block[0][1]} | #{block[0][2]} |"
   puts "x---x---x---x"
-  puts "| 4 | 5 | 6 |"
+  puts "| #{block[1][0]} | #{block[1][1]} | #{block[1][2]} |"
   puts "x---x---x---x"
-  puts "| 7 | 8 | 9 |"
+  puts "| #{block[2][0]} | #{block[2][1]} | #{block[2][2]} |"
   puts "x---x---x---x"
 end
 
