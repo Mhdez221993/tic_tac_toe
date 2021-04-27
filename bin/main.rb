@@ -57,9 +57,9 @@ while counter.positive?
   cell1 = gets.chomp.to_i
   check_input(cell1)
   counter -= 1
-  if counter.zero?
+  if counter == 2
     puts "\n"
-    puts 'is a tie!'
+    puts 'You won!'
     exit
   end
 
