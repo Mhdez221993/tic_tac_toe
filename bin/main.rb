@@ -7,6 +7,15 @@ def check_input(cell)
   end
 end
 
+def verify_name(name)
+  player = name
+  while player.empty?
+    puts 'pleate type a valid name'
+    player = gets.chomp
+  end
+  player
+end
+
 def show_board
   system 'clear' or system 'cls'
 
@@ -25,12 +34,12 @@ puts 'Welcome to Tic-Tac-Toe!'
 puts "\n"
 puts "What's the name of the first player?"
 
-player1 = gets.chomp
+player1 = verify_name(gets.chomp)
 
 puts "\n"
 puts "What's the name of the second player?"
 
-player2 = gets.chomp
+player2 = verify_name(gets.chomp)
 
 puts "\n"
 
