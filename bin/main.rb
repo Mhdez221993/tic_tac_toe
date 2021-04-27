@@ -47,16 +47,6 @@ def boards
   $seven = [$block[0][0],$block[1][1],$block[2][2]]
   $eight = [$block[0][2],$block[1][1],$block[2][0]]
 end
-
-def show_board
-  $counter = 1
-  system "clear" or system "cls"
-  $counter += 1
-  if $counter == 9
-    puts "Draw!"
-  end
-  boards
-end
   
 puts "Welcome to Tic-Tac-Toe!"
 puts "\n"
