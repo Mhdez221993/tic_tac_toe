@@ -26,6 +26,20 @@ module TicTacToe
       call_draw unless board.grid.flatten.any?(Numeric)
     end
 
+    def posible_winning
+        board.grid +
+        board.grid.transpose +
+        [[board.get_cell(0,0), board.get_cell(1,1), board.get_cell(2,2)],
+        [board.get_cell(0,2), board.get_cell(1,1), board.get_cell(2,0)]]
+    end
+    
+    def check_if_winner
+        posible_winning.each do |arr|
+            return true if arr.all? {|v| v == arr[0]}
+        end
+        return false
+    end
+
     def play
       counter = 9
       while counter.positive?
@@ -34,14 +48,22 @@ module TicTacToe
         x, y = human_move_to_coordinate(move)
         board.set_cell(x, y, 'X')
         show_board(self)
-        counter -= 1
         check_if_draw
+        if check_if_winner
+            announce_winner(player.player1)
+            play_again?
+        end
+        counter -= 1
 
         show_board(self)
         move = call_player(player.player2)
         x, y = human_move_to_coordinate(move)
         board.set_cell(x, y, 'O')
         show_board(self)
+        if check_if_winner
+            announce_winner(player.player2)
+            play_again?
+        end
         counter -= 1
       end
     end

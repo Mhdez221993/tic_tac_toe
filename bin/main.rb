@@ -31,7 +31,7 @@ module TicTacToe
   class Game
     def show_board(game)
       b = game.board
-      # system 'clear' or system 'cls'
+      system 'clear' or system 'cls'
       puts 'x---x---x---x'
       puts "| #{b.get_cell(0, 0)} | #{b.get_cell(0, 1)} | #{b.get_cell(0, 2)} |"
       puts 'x---x---x---x'
@@ -55,7 +55,7 @@ module TicTacToe
     end
 
     def play_again?
-      puts 'Play Again? [Y/N]'
+      puts 'Do you wanna try again? [Y/N]'
       ans = gets.chomp.to_s.upcase
       case ans
       when 'Y'
@@ -66,6 +66,10 @@ module TicTacToe
         exit
       end
       play_again?
+    end
+
+    def announce_winner(winner)
+        puts "The winner is #{winner}"
     end
   end
 end
