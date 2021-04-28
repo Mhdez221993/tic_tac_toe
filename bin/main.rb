@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 require_relative '../lib/game'
+require_relative '../lib/board'
+require_relative '../lib/player'
 
 def verify_name(name)
   player = name
@@ -45,8 +47,8 @@ module TicTacToe
     def call_player(player)
       puts "It's #{player} turn:"
       number = gets.chomp.to_i
-      until number.between?(1,9)
-        puts "Please enter a number between 1 and 9"
+      until number.between?(1, 9)
+        puts 'Please enter a number between 1 and 9'
         number = gets.chomp.to_i
       end
       number.to_s
@@ -74,7 +76,7 @@ module TicTacToe
     end
 
     def announce_winner(winner)
-        puts "The winner is #{winner}"
+      puts "The winner is #{winner}"
     end
   end
 end

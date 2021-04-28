@@ -27,17 +27,17 @@ module TicTacToe
     end
 
     def posible_winning
-        board.grid +
+      board.grid +
         board.grid.transpose +
-        [[board.get_cell(0,0), board.get_cell(1,1), board.get_cell(2,2)],
-        [board.get_cell(0,2), board.get_cell(1,1), board.get_cell(2,0)]]
+        [[board.get_cell(0, 0), board.get_cell(1, 1), board.get_cell(2, 2)],
+         [board.get_cell(0, 2), board.get_cell(1, 1), board.get_cell(2, 0)]]
     end
-    
+
     def check_if_winner
-        posible_winning.each do |arr|
-            return true if arr.all? {|v| v == arr[0]}
-        end
-        return false
+      posible_winning.each do |arr|
+        return true if arr.all? { |v| v == arr[0] }
+      end
+      false
     end
 
     def play
@@ -50,8 +50,8 @@ module TicTacToe
         show_board(self)
         check_if_draw
         if check_if_winner
-            announce_winner(player.player1)
-            play_again?
+          announce_winner(player.player1)
+          play_again?
         end
         counter -= 1
 
@@ -61,41 +61,11 @@ module TicTacToe
         board.set_cell(x, y, 'O')
         show_board(self)
         if check_if_winner
-            announce_winner(player.player2)
-            play_again?
+          announce_winner(player.player2)
+          play_again?
         end
         counter -= 1
       end
-    end
-  end
-
-  class Board
-    attr_reader :grid
-
-    def initialize(input = {})
-      @grid = input.fetch(:grid, default_grid)
-    end
-
-    def default_grid
-      uno = 0
-      Array.new(3) { Array.new(3) { uno += 1 } }
-    end
-
-    def get_cell(x, y)
-      grid[x][y]
-    end
-
-    def set_cell(x, y, value)
-      grid[x][y] = value
-    end
-  end
-
-  class Player
-    attr_reader :player1, :player2
-
-    def initialize(player1, player2)
-      @player1 = player1
-      @player2 = player2
     end
   end
 end
