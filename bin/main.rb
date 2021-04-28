@@ -80,7 +80,6 @@ module TicTacToe
     end
   end
 end
-# show_board(game)
 puts "\n"
 puts "#{player1} will play X and #{player2} will play O"
 puts "\n"
