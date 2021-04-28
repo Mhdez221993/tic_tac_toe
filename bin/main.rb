@@ -44,7 +44,12 @@ module TicTacToe
 
     def call_player(player)
       puts "It's #{player} turn:"
-      gets.chomp
+      number = gets.chomp.to_i
+      until number.between?(1,9)
+        puts "Please enter a number between 1 and 9"
+        number = gets.chomp.to_i
+      end
+      number.to_s
     end
 
     def call_draw
