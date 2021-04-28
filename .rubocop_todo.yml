@@ -38,3 +38,4 @@ Metrics/MethodLength:
 Naming/MethodParameterName:
   Exclude:
     - 'bin/main.rb'
+    - 'lib/game.rb'
