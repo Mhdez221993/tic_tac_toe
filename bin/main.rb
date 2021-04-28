@@ -1,9 +1,4 @@
 #!/usr/bin/env ruby
-
-require './lib/game'
-
-Game.new
-#!/usr/bin/env ruby
 require_relative '../lib/game'
 
 def verify_name(name)
