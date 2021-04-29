@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 require_relative '../lib/game'
+require_relative '../lib/board'
+require_relative '../lib/player'
 
 def verify_name(name)
   player = name
@@ -31,7 +33,7 @@ module TicTacToe
   class Game
     def show_board(game)
       b = game.board
-      # system 'clear' or system 'cls'
+      system 'clear' or system 'cls'
       puts 'x---x---x---x'
       puts "| #{b.get_cell(0, 0)} | #{b.get_cell(0, 1)} | #{b.get_cell(0, 2)} |"
       puts 'x---x---x---x'
@@ -44,7 +46,12 @@ module TicTacToe
 
     def call_player(player)
       puts "It's #{player} turn:"
-      gets.chomp
+      number = gets.chomp.to_i
+      until number.between?(1, 9)
+        puts 'Please enter a number between 1 and 9'
+        number = gets.chomp.to_i
+      end
+      number.to_s
     end
 
     def call_draw
@@ -55,7 +62,7 @@ module TicTacToe
     end
 
     def play_again?
-      puts 'Play Again? [Y/N]'
+      puts 'Do you wanna try again? [Y/N]'
       ans = gets.chomp.to_s.upcase
       case ans
       when 'Y'
@@ -67,9 +74,12 @@ module TicTacToe
       end
       play_again?
     end
+
+    def announce_winner(winner)
+      puts "The winner is #{winner}"
+    end
   end
 end
-# show_board(game)
 puts "\n"
 puts "#{player1} will play X and #{player2} will play O"
 puts "\n"
