@@ -1,15 +1,11 @@
-require_relative '../lib/board.rb'
+require_relative '../lib/board'
 
 module TicTacToe
-    describe Board do
-        describe "#default_grid" do
-            it "returns 3 nested arrays" do
-                board = Board.new
-                uno = 0
-                arr = Array.new(3) { Array.new(3) { uno += 1 } }
-                expect(board.default_grid).to eq(arr)
-            end
-        end
+  describe Board do
+    describe '#initialize' do
+      it 'not to rise erro without parmeter' do
+        expect(Board.new).to_not raise_error
+      end
     end
+  end
 end
-  
