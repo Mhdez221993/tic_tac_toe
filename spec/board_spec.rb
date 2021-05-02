@@ -2,9 +2,12 @@ require_relative '../lib/board'
 
 module TicTacToe
   describe Board do
-    describe '#initialize' do
+    describe '#default_grid' do
       it 'not to rise erro without parmeter' do
-        expect(Board.new).to_not raise_error
+        uno = 0
+        arr = Array.new(3) { Array.new(3) { uno += 1 } }
+        board = Board.new
+        expect(board.default_grid).to eq arr
       end
     end
   end
