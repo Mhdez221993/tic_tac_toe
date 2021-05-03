@@ -9,6 +9,9 @@ module TicTacToe
       it 'return the name of the players' do
         expect(game.player.player1).to eq 'Safa'
       end
+      it 'raise error if there is no arguments' do
+        expect{Game.new}.to raise_error
+      end
     end
 
     describe '#human_move_to_coordinate' do
