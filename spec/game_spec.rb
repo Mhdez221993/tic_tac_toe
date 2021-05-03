@@ -35,6 +35,17 @@ module TicTacToe
             expect(game.posible_winning).to eq wins
         end
       end
+
+      describe "#check_if_winner" do
+        it "false if all the values in the array are not the same" do
+            expect(game.check_if_winner).to eq false
+        end
+
+        it "false if all the values in the array are not the same" do
+            game.board.grid = [['x','x','x'],['x','o','x'],['x','o','x']]
+            expect(game.check_if_winner).to eq true
+        end
+      end
     end
 end
 
