@@ -15,7 +15,19 @@ Go to https://github.com/srizzuto/tic_tac_toe/
 2. Use terminal to clone this repository on your local machine.
 3. Run <code>git checkout -b your-branch-name</code>. Make your contributions.
 4. Push your branch up to your forked repository.
-5. Open a Pull Request with a detailed description of the development branch of the original project for a review.
+
+## Running tests
+
+To run the tests locally :
+
+- First option : run the run_all_spec executable file to run all the tests at once.
+
+   eg : `./run_all_spec` 
+
+- Second option : run each file in the spec folder individualy.
+
+   eg : `rspec ./spec/game_spec.rb` 
+
 
 ## Instructions
 
@@ -65,6 +77,12 @@ Have fun!
 - GitHub: [@Mhdez221993](https://github.com/Mhdez221993) 
 - Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050) 
 - LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/) 
+
+👤 **Safa Aballagh**
+
+- GitHub: [@Safafa](https://github.com/safafa)
+- Twitter: [@safa aballagh](https://twitter.com/Aballagh_S)
+- LinkedIn: [Aballagh Safa](https://www.linkedin.com/in/aballaghsafa/)
 
 ## Contributing
 
