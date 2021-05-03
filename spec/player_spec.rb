@@ -14,7 +14,7 @@ module TicTacToe
       end
 
       it 'thrown error if no arguments' do
-        expect{Player.new}.to raise_error
+        expect { Player.new }.to raise_error
       end
     end
   end

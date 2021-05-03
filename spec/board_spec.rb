@@ -23,7 +23,7 @@ module TicTacToe
       end
 
       it 'raise error if not arguments' do
-        expect{ board.get_cell }.to raise_error
+        expect { board.get_cell }.to raise_error
       end
     end
 
@@ -33,7 +33,7 @@ module TicTacToe
       end
 
       it 'raise error if not arguments' do
-        expect{ board.set_cell }.to raise_error
+        expect { board.set_cell }.to raise_error
       end
     end
   end
