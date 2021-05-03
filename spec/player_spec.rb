@@ -12,6 +12,10 @@ module TicTacToe
         player = Player.new('Safa', 'Moises')
         expect(player.player2).to eq 'Moises'
       end
+
+      it 'thrown error if no arguments' do
+        expect{Player.new}.to raise_error
+      end
     end
   end
 end
