@@ -46,6 +46,14 @@ module TicTacToe
             expect(game.check_if_winner).to eq true
         end
       end
+
+      describe "#play" do
+        it "return nil" do
+           game.stub(:play) {nil unless game.check_if_draw or  game.check_if_winner}
+            expect(game.play).to eq nil
+        end
+      end
+
     end
 end
 
