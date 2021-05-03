@@ -1,10 +1,9 @@
 require_relative '../lib/game.rb'
-require_relative '../lib/player.rb'
 require_relative '../lib/board.rb'
 
 module TicTacToe
     describe Game do
-    let(:mockPlayer) { Player.new("Safa", "Moises") }
+    let(:mockPlayer) { double(:player1 => "Safa", :player2 => "Moises") }
       describe ".initialize" do
         it "return the name of the players" do
             game = Game.new(mockPlayer)
@@ -28,7 +27,7 @@ module TicTacToe
             board = Board.new
             board.grid = [['x','o','x'],['x','o','x'],['x','o','x']]
             game = Game.new(mockPlayer,board)
-            game.stub(:check_if_draw) {true unless board.grid.flatten.any?(Numeric)} 
+            game.stub(:check_if_draw) {true unless board.grid.flatten.any?(Numeric)}
             expect(game.check_if_draw).to eq true
         end
       end
