@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+system 'rspec spec/board_spec.rb'
+system 'rspec spec/game_spec.rb'
+system 'rspec spec/player_spec.rb'

@@ -1,6 +1,6 @@
 module TicTacToe
   class Game
-    attr_reader :player, :board
+    attr_accessor :player, :board
 
     def initialize(player, board = Board.new)
       @player = player
