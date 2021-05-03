@@ -29,6 +29,11 @@ module TicTacToe
         game.stub(:check_if_draw) { true unless game.board.grid.flatten.any?(Numeric) }
         expect(game.check_if_draw).to eq true
       end
+      
+      it 'raise erro without stub(:check_if_draw)' do
+        game.board.grid = [%w[x o x], %w[x o x], %w[x o x]]
+        expect{game.check_if_draw}.to raise_error
+      end
     end
 
     describe '#posible_winning' do
@@ -54,6 +59,11 @@ module TicTacToe
         game.stub(:play) { nil unless game.check_if_winner }
         expect(game.play).to eq nil
       end
+
+      it 'raise erro without stub(:play)' do
+        expect{game.play}.to raise_error
+      end
+
       it 'return nil' do
         game.board.grid = [%w[x x x], %w[x o x], %w[x o x]]
         game.stub(:play) { nil unless game.check_if_winner }
