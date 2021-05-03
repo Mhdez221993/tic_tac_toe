@@ -25,6 +25,13 @@ module TicTacToe
             expect(board.get_cell(2,2)).to eq 9
         end
       end
+
+      describe "#set_cell" do
+        it "return un empty hash" do
+            board = Board.new
+            expect(board.set_cell(2,2,"X")).to eq "X"
+        end
+      end
     end
 end
   
