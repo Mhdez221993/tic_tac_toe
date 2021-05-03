@@ -49,7 +49,12 @@ module TicTacToe
 
       describe "#play" do
         it "return nil" do
-           game.stub(:play) {nil unless game.check_if_draw or  game.check_if_winner}
+           game.stub(:play) {nil unless game.check_if_winner}
+            expect(game.play).to eq nil
+        end
+        it "return nil" do
+          game.board.grid = [['x','x','x'],['x','o','x'],['x','o','x']]
+           game.stub(:play) {nil unless game.check_if_winner}
             expect(game.play).to eq nil
         end
       end
