@@ -11,6 +11,13 @@ module TicTacToe
             expect(game.player.player1).to eq "Safa"
         end
       end
+
+      describe "#human_move_to_coordinate" do
+        it "return the coordinates" do
+            game = Game.new(mockPlayer)
+            expect(game.human_move_to_coordinate("3")).to eq [0, 2]
+        end
+      end
     end
 end
 
