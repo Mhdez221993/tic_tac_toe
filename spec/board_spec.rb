@@ -9,6 +9,14 @@ module TicTacToe
             expect(board.grid).to eq arr
         end
       end
+
+      describe "#default_grid" do
+        it "return un empty hash" do
+            arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+            board = Board.new
+            expect(board.default_grid).to eq arr
+        end
+      end
     end
 end
   
