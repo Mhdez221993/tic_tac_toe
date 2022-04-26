@@ -8,6 +8,8 @@ I'd like to point out that, this project is built in pure Ruby no packages, no G
 ## Built With
 
 - Ruby
+- RSpec
+- Unix shell
 
 ## Getting Started
 
