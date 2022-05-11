@@ -1,6 +1,7 @@
-# tic_tac_toe
+# Tic Tac Toe
 
-A game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does
+A game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does.
+I'd like to point out that, this project is built in pure Ruby no packages, no Genfile needed.
 
 ![tic_tac_toe1](https://user-images.githubusercontent.com/67757001/165240349-0c77a83a-79b0-475d-b35f-6173ae6982b0.jpeg)
 
@@ -9,6 +10,8 @@ A game in which two players alternately put Xs and Os in compartments of a figur
 ## Built With
 
 - Ruby
+- RSpec
+- Unix shell
 
 ## Getting Started
 
