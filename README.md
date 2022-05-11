@@ -4,6 +4,8 @@ A game in which two players alternately put Xs and Os in compartments of a figur
 
 ![tic_tac_toe1](https://user-images.githubusercontent.com/67757001/165240349-0c77a83a-79b0-475d-b35f-6173ae6982b0.jpeg)
 
+[Live Demo](https://replit.com/join/rsxlnjjqih-mhdez)
+
 ## Built With
 
 - Ruby
@@ -12,7 +14,7 @@ A game in which two players alternately put Xs and Os in compartments of a figur
 
 To get a local copy up and running follow these simple example steps.
 
-Go to https://github.com/srizzuto/tic_tac_toe/
+Go to <https://github.com/srizzuto/tic_tac_toe/>
 
 1. Click on the code and copy the HTML code.
 2. Use terminal to clone this repository on your local machine.
@@ -25,12 +27,11 @@ To run the tests locally :
 
 - First option : run the run_all_spec executable file to run all the tests at once.
 
-   eg : `./run_all_spec` 
+   eg : `./run_all_spec`
 
 - Second option : run each file in the spec folder individualy.
 
-   eg : `rspec ./spec/game_spec.rb` 
-
+   eg : `rspec ./spec/game_spec.rb`
 
 ## Instructions
 
@@ -63,7 +64,6 @@ To run the tests locally :
     - Going through the whole game, after the win, loss or draw the game will ask you if you want to play again, you can hit Y to replay or N to exit
     - If you want to leave inmediately, use <code>ctrl + C</code> and the game will be shutted down.
 
-
 Have fun!
 
 ## Authors
@@ -74,12 +74,11 @@ Have fun!
 - Twitter: [@sbstnrzzt](https://twitter.com/sbstnrzzt)
 - LinkedIn: [Sebastian Rizzuto](https://www.linkedin.com/in/srizzuto/)
 
+👤 **Moises Hernandez Coronado**
 
-👤 **Moises Hernandez Coronado** 
-
-- GitHub: [@Mhdez221993](https://github.com/Mhdez221993) 
-- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050) 
-- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/) 
+- GitHub: [@Mhdez221993](https://github.com/Mhdez221993)
+- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
+- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
 
 👤 **Safa Aballagh**
 
