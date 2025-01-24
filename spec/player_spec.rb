@@ -16,6 +16,12 @@ module TicTacToe
       it 'thrown error if no arguments' do
         expect { Player.new }.to raise_error
       end
+
+      it 'assigns symbols to players' do
+        player = Player.new('Safa', 'Moises')
+        expect(player.player1_symbol).to eq 'X'
+        expect(player.player2_symbol).to eq 'O'
+      end
     end
   end
 end
