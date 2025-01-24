@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-18.04
     
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v3
         with:
           ruby-version: ">=3.0.x"
       - name: Setup Rubocop
