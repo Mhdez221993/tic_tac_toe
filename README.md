@@ -17,55 +17,11 @@ I'd like to point out that, this project is built in pure Ruby no packages, no G
 
 To get a local copy up and running follow these simple example steps.
 
-Go to <https://github.com/srizzuto/tic_tac_toe/>
+Run in your terminal `git clone git@github.com:Mhdez221993/tic_tac_toe.git`
 
-1. Click on the code and copy the HTML code.
-2. Use terminal to clone this repository on your local machine.
-3. Run <code>git checkout -b your-branch-name</code>. Make your contributions.
-4. Push your branch up to your forked repository.
+Ensure you have ruby intalled
 
-## Running tests
-
-To run the tests locally :
-
-- First option : run the run_all_spec executable file to run all the tests at once.
-
-   eg : `./run_all_spec`
-
-- Second option : run each file in the spec folder individualy.
-
-   eg : `rspec ./spec/game_spec.rb`
-
-## Instructions
-
-1) Open your terminal:
-    - On Windows => <code>Win + R</code>
-    - On Linux => <code>ctrl + alt + T</code>
-    - On Mac => <code>Control + Option + Shift + T</code>
-
-2) Go to the directory where the game is located, it will be the one where you cloned the repository. Execute the main.rb by typing:
-    - <code>bin/main.rb</code>
-
-3) Alright! You are ready to play! After the welcome message, both of you will be asked to insert your names:
-    - Remember: You can't leave a player's name empty!
-
-4) After the game assign you either if you'll be playing with 'X' or 'O' it's time to do your first move! You will do this by pressing a name between 1 and 9 and confirm the move by pressing Enter:
-    - Every move you do will be displayed in the board, replacing the selected number for the player's sign ('X' or 'O')
-    - The game won't allow you to put words or numbers outside the range between 1 and 9
-
-5) Winning conditions:
-    There are 8 approaches to win the game:
-    - If one of the players manages to put three signs in a line (horizontally) (3)
-    - If one of the players manages to put three signs in a line (vertically) (3)
-    - If one of the players manages to put three signs in a line (over a diagonal) (2)
-
-6) Tie conditions:
-    - The game will declare a draw between the players if they run out of moves (9 total)
-
-7) "I want to exit, how do I do this?"
-    There are two ways to do this:
-    - Going through the whole game, after the win, loss or draw the game will ask you if you want to play again, you can hit Y to replay or N to exit
-    - If you want to leave inmediately, use <code>ctrl + C</code> and the game will be shutted down.
+In the command line run `./bin/main.rb`
 
 Have fun!
 
