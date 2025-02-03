@@ -5,8 +5,6 @@ I'd like to point out that, this project is built in pure Ruby no packages, no G
 
 ![tic_tac_toe1](https://user-images.githubusercontent.com/67757001/165240349-0c77a83a-79b0-475d-b35f-6173ae6982b0.jpeg)
 
-[Live Demo](https://replit.com/join/rsxlnjjqih-mhdez)
-
 ## Built With
 
 - Ruby
@@ -36,8 +34,7 @@ Have fun!
 👤 **Moises Hernandez Coronado**
 
 - GitHub: [@Mhdez221993](https://github.com/Mhdez221993)
-- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
-- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
+- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hdez-coronado/)
 
 👤 **Safa Aballagh**
 
