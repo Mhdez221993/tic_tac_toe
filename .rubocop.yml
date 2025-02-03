@@ -9,8 +9,7 @@ AllCops:
 
   DisplayCopNames: true
 
-Layout/LineLength:
-  Max: 120
+# Metrics settings
 Metrics/MethodLength:
   Max: 130
 Metrics/AbcSize:
@@ -21,7 +20,7 @@ Metrics/BlockLength:
   IgnoredMethods: ['describe']
   Max: 30
 
-
+# Style settings
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -34,7 +33,14 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
 
+# Layout settings
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
@@ -42,13 +48,11 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+Layout/LineLength:
+  Max: 120
+
+# Lint settings
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
-  Enabled: false
-Style/HashEachMethods:
-  Enabled: false
-Style/HashTransformKeys:
-  Enabled: false
-Style/HashTransformValues:
   Enabled: false
